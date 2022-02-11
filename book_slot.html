@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        
+        <link rel="stylesheet" type="text/css" href="/Assignment1/styles.css"> 
+
+    </head>
+    <body>
+        <header>Pharmacy</header>
+        <nav>
+            <ul class="main-menu list-unstyled">
+                <li class="item-with-sub-menu">
+                    <a href="/link1">Home</a>                        
+                </li>
+                <!-- position: relative -->
+                <li class="item-with-sub-menu">
+                    <a href="/link2">Our Medicines</a>
+                        <ul class="sub-menu list-unstyled">
+                            <li>
+                                <a href="/link2/item1">Fever</a>
+                            </li>
+                            <li>
+                                <a href="/link2/item1">Muscle Pains</a>
+                            </li>
+                            <li>
+                                <a href="/link2/item1">Cold & Cough</a>
+                            </li>
+                        </ul>
+                    
+                </li>
+                
+                <li class="item-with-sub-menu">
+                    <a href="/link3">Health Care</a>
+                    <ul class="sub-menu list-unstyled">
+                        <li>
+                            <a href="/link2/item1">Baby Care</a>
+                        </li>
+                        <li>
+                            <a href="/link2/item1">Skin Care</a>
+                        </li>
+                        <li>
+                            <a href="/link2/item1">Home Care</a>
+                        </li>
+                        <li>
+                            <a href="/link2/item1">Personal Care & Pet Care</a>
+                        </li>
+                    </ul>
+                </li>
+                        <li class="item-with-sub-menu">
+                            <a href="/Assignment1/book_slot.html" target="_blank">Lab Test</a>                            
+                        </li>
+            </ul>
+        </nav>       
+
+        <form > 
+            
+            <div class="outerdiv"> 
+                <div class="imgdiv"><img src="/Assignment1/Lab-Test/lab-test.jpg"></div>
+                    <div class="innerdiv">
+                        <h3>1. Your Contact Details</h3>
+                            <input type="text" name="fullname" placeholder="Full Name">
+                            <input type="text" name="pid" placeholder="Patient id if exists">
+                            <input type="text"  name="cnumber" placeholder="Contact Number" >
+                            <input type="email" name="email" placeholder="e-mail id">       
+                                    
+                            <h3>2. Address</h3>     
+
+                            <input type="text" class="left" name="hno" placeholder="H-No">            
+                            <input type="text" class="left" name="pid" placeholder="Street">  
+                            <input type="text" name="area" placeholder="Area">
+                        
+                            <div class="distlist"> 
+                                <h3>District</h3>                                            
+                                    <select name="distlist">
+                                        <option value="Choose">Choose</option>
+                                        <option value="Indore">Indore</option>
+                                        <option value="Gwalior">Gwalior</option>
+                                        <option value="Bhopal">Bhopal</option>
+                                        <option value="Jabalpur">Jabalpur</option>
+                                    </select>
+                            </div>
+                
+                        <h3>3.Choose a Test Type</h3>
+                                
+                            <input type="checkbox"  name="bloodtest" value="CBC" required/> CBC
+                            <input type="checkbox"  name="bloodtest" value="Complete Urine" required/> Complete Urine
+                            <input type="checkbox"  name="bloodtest" value="Lipid Profile" required/> Lipid Profile
+                            <input type="checkbox"  name="bloodtest" value="Thyroid Stimulating Hormone(TSH)" required/>Thyroid Stimulating Hormone(TSH)
+                            <input type="checkbox"  name="bloodtest" value="Glucose Test" required/>Glucose Test              
+            
+                        <h3>4. Do you want a hard copy of the report also?</h3>              
+                    
+                        <input type="radio" id="report" name="report" value="Yes" required>YES
+                        <input type="radio" id="report" name="report" value="Yes" required>NO
+                    
+                        <h3>5. Select Your Comfortable Date and Time</h3>
+        
+                        <input type="Date" id="date" name="date" placeholder="Date">
+                        <input type="time" id="time" name="date" placeholder="Time">       
+                </div>
+            </div>                  
+
+        </form>      
+        <div class="btndiv">            
+            <button class="button submit" type="submit" value="Submit">Submit</button>
+            <button class="button reset" type="reset" value="Reset">Reset</button>
+        </div>
+     
+      <footer>@copyright. Only for demonstration purposes</footer>
+
+    </body>
+</html>

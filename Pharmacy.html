@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- 3. Style it -->
+        <!-- On the ul set list-style-type: none (to remove bullets) -->
+        <!-- Remove padding, margin of ul -->
+        <!-- You can get list items side-by-side by making them inline-block -->
+        <link rel="stylesheet" type="text/css" href="/Assignment1/styles.css"> 
+    </head>
+    <body>
+        <header>Pharmacy</header>        
+        <nav>
+            <ul class="main-menu list-unstyled">
+                <li class="item-with-sub-menu">
+                    <a href="/link1">Home</a>                        
+                </li>
+                <!-- position: relative -->
+                <li class="item-with-sub-menu">
+                    <a href="/link2">Our Medicines</a>
+                        <ul class="sub-menu list-unstyled">
+                            <li>
+                                <a href="/link2/item1">Fever</a>
+                            </li>
+                            <li>
+                                <a href="/link2/item1">Muscle Pains</a>
+                            </li>
+                            <li>
+                                <a href="/link2/item1">Cold & Cough</a>
+                            </li>
+                        </ul>
+                    <!-- 4. Add another ul within with sub menu (class="sub-menu") items as list items. Make this ul - position: absolute , top: ?  --> 
+                </li>
+                
+                <li class="item-with-sub-menu">
+                    <a href="/link3">Health Care</a>
+                    <ul class="sub-menu list-unstyled">
+                        <li>
+                            <a href="/link2/item1">Baby Care</a>
+                        </li>
+                        <li>
+                            <a href="/link2/item1">Skin Care</a>
+                        </li>
+                        <li>
+                            <a href="/link2/item1">Home Care</a>
+                        </li>
+                        <li>
+                            <a href="/link2/item1">Personal Care & Pet Care</a>
+                        </li>
+                    </ul>
+                </li>
+                        <li class="item-with-sub-menu">
+                            <a href="/Assignment1/book_slot.html" target="_blank">Lab Test</a>                            
+                        </li>
+            </ul>
+        </nav>
+
+      
+
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img class="big_img" src="/Assignment1/Animation/ani1.jpg">
+            </div>
+
+            <div class="mySlides fade">
+                <img class="big_img" src="/Assignment1/Animation/ani2.png">
+            </div>
+             
+             
+            <div class="mySlides fade">
+              <img class="big_img" src="/Assignment1/Animation/ani3.jpg">
+            </div>
+
+            <div class="mySlides fade">
+                <img class="big_img" src="/Assignment1/Animation/ani4.jpg">
+            </div>
+            
+        </div>
+        <br>
+        <h2>Covid Care</h2>
+        <div class="section">
+            <div class="sml_container">
+                <div class="sub_section">
+                    <h3>Covid Test Kit</h3>
+                    <img class="sml_img" src="/Assignment1/Products/c1.jpg">
+                    <h4>Rs. 40</h4>
+                    <h4>Offer Rs. 30</h4>
+                    <button type="button">Add to Cart</button>
+                </div>
+
+                <div class="sub_section">
+                    <h3>Covid Essentials</h3>
+                    <img class="sml_img" src="/Assignment1/Products/c2.jpg">
+                    <h4>Rs. 240</h4>
+                    <h4>Offer Rs. 170</h4>
+                    <button type="button">Add to Cart</button>
+                </div>
+                <div class="sub_section">
+                    <h3>Sanitizer Bottle</h3>
+                    <img class="sml_img" src="/Assignment1/Products/c3.jpg">
+                    <h4>Rs. 99</h4>
+                    <h4>Offer Rs. 87</h4>
+                    <button type="button">Add to Cart</button>
+                </div>
+                <div class="sub_section">
+                    <h3>Mask</h3>
+                    <img class="sml_img" src="/Assignment1/Products/c4.jpg">
+                    <h4>Rs. 45</h4>
+                    <h4>Offer Rs. 30</h4>
+                    <button type="button">Add to Cart</button>
+                </div>
+            </div>   
+        </div>
+         
+        <h2>Diebetes Care</h2>
+        <div class="section">
+            <div class="sub_section">
+                <h3>Mask</h3>
+                <img class="sml_img" src="/Assignment1/Products/d1.jpg">
+                <h4>Rs. 45</h4>
+                <h4>Offer Rs. 30</h4>
+                <button type="button">Add to Cart</button>
+            </div>
+            <div class="sub_section">
+                <h3>Mask</h3>
+                <img class="sml_img" src="/Assignment1/Products/d2.jpg">
+                <h4>Rs. 45</h4>
+                <h4>Offer Rs. 30</h4>
+                <button type="button">Add to Cart</button>
+            </div>
+            <div class="sub_section">
+                <h3>Mask</h3>
+                <img class="sml_img" src="/Assignment1/Products/d3.jpg">
+                <h4>Rs. 45</h4>
+                <h4>Offer Rs. 30</h4>
+                <button type="button">Add to Cart</button>
+            </div>
+            <div class="sub_section">
+                <h3>Mask</h3>
+                <img class="sml_img" src="/Assignment1/Products/d4.png">
+                <h4>Rs. 45</h4>
+                <h4>Offer Rs. 30</h4>
+                <button type="button">Add to Cart</button>
+            </div>
+        </div>
+
+        <script>
+            var slideIndex = 0;
+            showSlides();            
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              for (i = 0; i < slides.length; i++) {slides[i].style.display = "none";}
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              slides[slideIndex-1].style.display = "block";  
+              setTimeout(showSlides, 2000);             }
+            </script>
+          <footer>@copyright. Only for demonstration purposes</footer>
+    
+    </body>
+</html>

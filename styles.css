@@ -1,0 +1,205 @@
+			.list-unstyled {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                text-decoration: none;
+            }
+            .main-menu {
+                background-color: lightgray;
+            }
+            .main-menu > li {
+                display: inline-block;
+            }
+            .main-menu > li > a {
+                display: inline-block;
+                padding: 0.5em;
+                text-decoration: none;
+                color: white;
+            }
+            .main-menu > li > a:hover {
+                background-color: black;
+            }
+            .item-with-sub-menu {
+                position: relative;
+            }
+
+            /* we need to hide this initially */
+            .sub-menu {
+                position: absolute;
+                top: 35px; /* from the top of the .item-with-sub-menu element */
+                left: 0px;
+                white-space: nowrap;
+                padding: 1em;
+                background-color: lightsteelblue;
+                display: none;            
+
+            }
+
+            .sub-menu>li{position: relative;}
+
+            .sub-menu>li>a{
+                text-decoration: none;
+                color: rgb(34, 129, 161);
+            }
+
+            /* modify the selector so that it selects the sub-menu only when it is within the ..item-with-sub-menu item that is being hovered upon */
+            .item-with-sub-menu:hover .sub-menu {
+                display: inline-block;
+            }
+            header {
+                background-color: #666;
+                padding: 30px;
+                font-weight: bolder;
+                text-align: right;
+                font-size: 45px;
+                padding-right: 15%;
+                color: white;
+            }
+            footer{
+                background-color: black;
+                color: white;
+                text-align: right;
+                height: 4%;
+                display: block;
+            }
+
+            
+            * { box-sizing:border-box; }
+
+            body {font-family: Verdana, sans-serif; 
+                margin: auto 0; 
+                padding:0%
+            }
+
+            .mySlides {
+                display: none; 
+                padding: 0; 
+                margin: 0
+            }
+
+            img {
+                vertical-align: middle;
+                padding: 0; margin: 0;
+                width:min-content;
+            }
+
+            /* Slideshow container */
+            .slideshow-container {
+            position: relative;
+            margin: auto 0;
+            padding: 0;
+            border-color: steelblue;
+            border: 2px solid;
+            width: 100%;
+            }
+
+            /* Fading animation */
+            .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+            }
+
+            @-webkit-keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+            }
+
+            @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+            }
+        .section::after{
+            display: table;
+            content: "";
+            clear: both; 
+            margin: 1%;
+            padding-left: 1%;             
+        }
+
+        .sub_section
+            {
+            float: left;  
+            width: 24%;
+            height: 98%; 
+            background-color:whitesmoke;
+            margin: 0.25%;
+            padding:1%;
+        } 
+        .sub_section:hover{
+            width: 25%;
+            height: 99%;
+        }
+        
+        .big_img {
+            width: 100% }
+
+        .sml_img{
+            display:block; 
+            margin-left: auto; 
+            margin-right: auto; 
+            height: 170px;
+            width: 98%;
+        }
+        .sml_container{
+            position: relative;
+        }
+        .sub_section>button {
+            border: skyblue solid 2px;
+            border-radius: 10%;
+            width: 96%;
+            color: peru;
+            padding: 15px 32px;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 18px;
+            padding: 2%;
+            margin: 2%;
+            }
+            .sub_section>button:active {
+              background-color: rgb(250, 234, 230);  
+              border-color: rgb(0, 255, 76);
+
+            }
+         
+		 
+		    .outerdiv{margin: 5%;
+                overflow: scroll;
+                border-style: outset;
+                height: 300px;
+            }
+            .outerdiv::after{
+                display:table;
+                content: ""; 
+                clear: both;
+                width: 30%; }
+            .innerdiv{
+                margin-left: 2.5%;
+                width: 40%;
+            }
+            .imgdiv{
+                float: right; width: 50%; height: 10%}  
+
+			input { 
+                    border: 0;
+                    outline: 0;
+                    background: transparent;
+                    border-bottom: 2px solid lightblue;
+                }
+            .submit {
+                background-color: rgba(158, 11, 172, 0.925);
+                text-align: center; 
+                color: white;
+                border: 2px rgba(158, 11, 172, 0.925);
+                vertical-align: middle;
+            }
+            .reset  {
+                background-color: rgba(158, 11, 172, 0.925); 
+                color: white; 
+                border: 2px rgba(158, 11, 172, 0.925);
+                vertical-align: middle;}
+            
+            .distlist{width: 20%;}
+
+            .btndiv{text-align: center;}
